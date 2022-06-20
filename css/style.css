@@ -4,74 +4,139 @@
     box-sizing: border-box;
 }
 
-section {
-    display: flex;
+#wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-#left-bar {
-    width: 20%;
+/*debug*/
+.box-debug {
+    width: 200px;
+    height: 100%;
+    background-color: fuchsia;
+}
+
+.debug .cover-items {
+    height: 300px;
+    width: 250px;
     background-color: red;
-    height: 100vh;
-    position: fixed;
 }
 
-#center-bar {
-    width: 80%;
-    height: 100vh;
-    margin-left: 20%;
+/*main*/
+main {
+    height: calc(100vh - 100px);
     background-color: yellow;
-}
-
-/*LEFT BAR*/
-#left-bar .image {
-    background-color: aqua;
-    width: 80%;
-    height: 4rem;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#left-bar .menu {
-    width: 80%;
-    margin: auto;
-    background-color: aqua;
-}
-
-#left-bar .menu .content {
-    padding: 0.5rem 0rem;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-#left-bar .playlist-title {
-    width: 80%;
-    margin: auto;
-    margin-top: 1rem;
-}
-
-#left-bar .playlist-title .h2 {
-    font-weight: bolder;
-    font-size: 25px; 
-}
-
-#left-bar .fondo {
-    position: fixed;
-    bottom: 0;
-    left: 2rem;
-    width: 15%;
-}
-
-/*RIGHT BAR*/
-#center-bar .menu {
-    width: 80%;
-    margin: auto;
-    background-color: green;
-}
-
-#center-bar .content {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+}
+
+.content {
+    width: calc(100vw - 250px);
+    overflow-y: scroll;
+}
+
+/*cta*/
+.cta {
+    position: fixed;
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: darkgray;
+    top: 0;
+    left: 250px;
+    text-align: right;
+    z-index: 10;
+}
+
+/*side-bar*/
+.main-content-nav {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.main-content-nav li {
+    display: inline-block;
+}
+
+#main-nav {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: black;
+}
+
+.main-nav {
+    width: 250px;
+
+}
+
+.nav-top {
+
+}
+
+.nav-bottom {
+
+}
+
+/*covers*/
+.covers {
+    margin-top: 20px;
+}
+
+.cover-list {
+    display: flex;
     list-style: none;
+    flex-wrap: wrap;
+}
+.cover-row {
+    margin-left: 20px;
+}
+
+.cover-items {
+    width: calc(100% / 6 - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+/*footer*/
+footer {
+    height: 100px;
+    background-color: grey;
+    z-index: 10;
+    position: relative;
+}
+
+#player {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+/*Responsive*/
+
+@media all and (max-width: 992px)  {
+    .cover-items {
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media all and (max-width: 768px)  {
+    .cover-items {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media all and (max-width: 678px)  {
+    .main-nav {
+        width: 50px;
+    }
+
+    .content {
+        width: calc(100vw - 50px);
+    }
+
+    .cta {
+        left: 50px;
+        width: calc(100% - 50px);
+    }
 }
