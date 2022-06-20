@@ -33,13 +33,13 @@ main {
     padding: 0.5rem 2rem;
     border-radius: 20px;
     border: 1px solid white;
-    opacity: none;
+    opacity: 1;
 }
 
 .upgrade {
     color: white;
     text-decoration: none;
-    opacity: none;
+    opacity: 1;
 }
 
 .covers h2 {
@@ -164,7 +164,7 @@ footer {
     height: 100%;
 }
 
-.box {
+.box-left {
     display: flex;
     justify-content: center;
 }
@@ -201,6 +201,20 @@ footer {
     padding: 10px;
 }
 
+.up {
+    margin-top: 110px;
+    text-align: center;
+}
+
+.up li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.up li a {
+    color: #7B7E82;
+    text-decoration: none;
+}
 
 /*Responsive*/
 
