@@ -10,6 +10,10 @@
     overflow: hidden;
 }
 
+html {
+    font-family: sans-serif;
+}
+
 /*debug*/
 .box-debug {
     width: 200px;
@@ -26,7 +30,7 @@
 /*main*/
 main {
     height: calc(100vh - 100px);
-    background-color: yellow;
+    background-color: #141922;
     display: flex;
 }
 
@@ -35,12 +39,35 @@ main {
     overflow-y: scroll;
 }
 
+.btn {
+    margin-top: 25px;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: 1px solid white;
+    opacity: none;
+}
+
+.upgrade {
+    color: white;
+    text-decoration: none;
+    opacity: none;
+}
+
+h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 /*cta*/
 .cta {
     position: fixed;
     width: calc(100% - 250px);
     height: 100px;
-    background-color: darkgray;
+    background-color: #080B12;
+    opacity: 0.7;
     top: 0;
     left: 250px;
     text-align: right;
@@ -55,25 +82,18 @@ main {
 
 .main-content-nav li {
     display: inline-block;
+    padding: 5px;
+}
+
+.main-content-nav li a {
+    color: #7B7E82;
+    text-decoration: none;
 }
 
 #main-nav {
     width: 250px;
     flex-shrink: 0;
     background-color: black;
-}
-
-.main-nav {
-    width: 250px;
-
-}
-
-.nav-top {
-
-}
-
-.nav-bottom {
-
 }
 
 /*covers*/
@@ -96,6 +116,9 @@ main {
     margin-right: 20px;
 }
 
+img {
+    background-size: cover;
+}
 
 /*footer*/
 footer {
