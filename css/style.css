@@ -55,11 +55,12 @@ main {
     opacity: none;
 }
 
-h2 {
+.covers h2 {
     color: white;
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 
 /*cta*/
 .cta {
@@ -106,6 +107,7 @@ h2 {
     list-style: none;
     flex-wrap: wrap;
 }
+
 .cover-row {
     margin-left: 20px;
 }
@@ -118,6 +120,14 @@ h2 {
 
 img {
     background-size: cover;
+}
+
+.covers h3 {
+    color: white;
+}
+
+.covers span {
+    color: #7B7E82;
 }
 
 /*footer*/
