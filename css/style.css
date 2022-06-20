@@ -4,3 +4,74 @@
     box-sizing: border-box;
 }
 
+section {
+    display: flex;
+}
+
+#left-bar {
+    width: 20%;
+    background-color: red;
+    height: 100vh;
+    position: fixed;
+}
+
+#center-bar {
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    background-color: yellow;
+}
+
+/*LEFT BAR*/
+#left-bar .image {
+    background-color: aqua;
+    width: 80%;
+    height: 4rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#left-bar .menu {
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+}
+
+#left-bar .menu .content {
+    padding: 0.5rem 0rem;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#left-bar .playlist-title {
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+#left-bar .playlist-title .h2 {
+    font-weight: bolder;
+    font-size: 25px; 
+}
+
+#left-bar .fondo {
+    position: fixed;
+    bottom: 0;
+    left: 2rem;
+    width: 15%;
+}
+
+/*RIGHT BAR*/
+#center-bar .menu {
+    width: 80%;
+    margin: auto;
+    background-color: green;
+}
+
+#center-bar .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
