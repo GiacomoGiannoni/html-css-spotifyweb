@@ -21,11 +21,6 @@ html {
     background-color: fuchsia;
 }
 
-.debug .cover-items {
-    height: 300px;
-    width: 250px;
-    background-color: red;
-}
 
 /*main*/
 main {
@@ -83,7 +78,7 @@ main {
 
 .main-content-nav li {
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
 }
 
 .main-content-nav li a {
@@ -118,16 +113,49 @@ main {
     margin-right: 20px;
 }
 
-img {
-    background-size: cover;
+.img-album {
+    width: 100%;
+}
+
+.text-album {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.text-album span {
+    margin-top: 5px;
 }
 
 .covers h3 {
     color: white;
+    margin-bottom: 5px;
 }
 
 .covers span {
     color: #7B7E82;
+}
+
+#created h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+#created span {
+    color: #7B7E82;
+}
+
+#created p {
+    color: #7B7E82;
+    margin-bottom: 10px;
+}
+
+#popular p {
+    color: #7B7E82;
+    margin-bottom: 10px;
+}
+
+#popular .cover-items .img-album {
+    border-radius: 50%;
 }
 
 /*footer*/
