@@ -59,7 +59,7 @@ main {
 }
 
 .main-content-nav li.active {
-    border-bottom: solid 3px lightgreen;
+    border-bottom: solid 3px #AEFF2F;
 }
 
 .main-content-nav li a {
@@ -182,7 +182,7 @@ main {
 }
 
 .menu-list li.active {
-    border-left: solid 3px lightgreen;
+    border-left: solid 3px #AEFF2F;
     color: white;
 }
 
@@ -366,15 +366,11 @@ footer {
     display: inline-block;
 }
 
-.up li a .bordercircle {
-    border: 1px solid white;
-    border-radius: 40%;
-}
-
 .up a {
     color: white;
     display: inline-block;
     text-align: center;
+    font-size: 20px;
 }
 
 .down {
@@ -412,7 +408,7 @@ footer {
     height: 5px;
     border-radius: 20px;
     position: absolute;
-    bottom: 26px;
+    bottom: 22px;
 }
 
 .player-audio {
