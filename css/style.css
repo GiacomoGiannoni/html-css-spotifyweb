@@ -124,7 +124,7 @@ main {
     overflow: hidden;
 }
 
-.nav-playlist h2 {
+.nav-playlist h3 {
     color: white;
     margin-top: 20px;
     margin-left: 20px;
@@ -133,17 +133,28 @@ main {
 .nav-playlist a {
     margin-left: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #7B7E82;
 }
 
 
 .nav-playlist .agg {
     background-color: #7B7E82;
-    
+    padding: 5px;
     font-size: 20px;
+    margin-right: 10px;
+    color: black;
 }
 
 .nav-playlist ul {
     overflow-y: scroll;
+    color: #7B7E82;
+}
+
+.nav-playlist li {
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .menu-list img {
@@ -153,7 +164,7 @@ main {
 }
 
 .menu-list a {
-    color: white;
+    color: #7B7E82;
     text-decoration: none;
     display: inline-block;
     vertical-align: middle;
@@ -163,10 +174,17 @@ main {
 .menu-list span {
     display: inline-block;
     vertical-align: middle;
+    font-size: 14px;
 }
 
 .menu-list li.active {
     border-left: solid 3px lightgreen;
+    color: white;
+}
+
+.menu-list .active-text {
+    color: white;
+    font-size: 14px;
 }
 
 .menu-list li {
@@ -201,6 +219,11 @@ main {
 .circle {
     background-color: #7B7E82;
     border-radius: 20px;
+  }
+
+  .hr-side {
+    width: 80%;
+    margin: 0px 25px;
   }
 
 /*covers*/
@@ -320,18 +343,86 @@ footer {
     padding: 10px;
 }
 
+.player-controller {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-center {
+    margin-top: 20px;
+}
+
 .up {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.up li {
+    padding: 10px;
     display: inline-block;
-    margin-top: 10px;
 }
 
 .up a {
     color: #7B7E82;
-    text-decoration: none;
-    padding: 10px;
+    display: inline-block;
+    text-align: center;
 }
 
+.down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.down li {
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.down li span {
+    color: #7B7E82;
+    display: inline-block;
+    text-align: center;
+}
+
+.down li hr {
+    background-color: #7B7E82;
+    display: inline-block;
+    text-align: center;
+    width: 400px;
+    height: 5px;
+    border-radius: 20px;
+}
+
+.player-audio {
+    display: flex;
+}
+
+.box-right {
+    display: flex;
+    align-items: center;
+}
+
+.box-right li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.box-right a {
+    color: #7B7E82;
+    display: inline-block;
+    text-align: center;
+}
+
+.box-right hr {
+    background-color: #7B7E82;
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    height: 5px;
+    border-radius: 20px;
+}
 /*Responsive*/
 
 @media all and (max-width: 992px)  {
