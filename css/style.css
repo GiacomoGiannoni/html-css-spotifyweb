@@ -95,7 +95,10 @@ main {
 
 .nav-bottom {
     height: 80px;
-    background-color: pink;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .nav-logo {
@@ -115,18 +118,32 @@ main {
 }
 
 .nav-playlist {
-    background-color: green;
+    background-color: black;
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-.nav-playlist ul {
-    overflow-y: scroll;
+.nav-playlist h2 {
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.nav-main.menu {
-    background-color: brown;
+.nav-playlist a {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+
+.nav-playlist .agg {
+    background-color: #7B7E82;
+    
+    font-size: 20px;
+}
+
+.nav-playlist ul {
+    overflow-y: scroll;
 }
 
 .menu-list img {
@@ -155,6 +172,36 @@ main {
 .menu-list li {
     border-left: solid 3px transparent;
 }
+
+.menu-list-down img {
+    width: 20px;
+    display: flex; 
+}
+
+.menu-list-down a {
+    color: #7B7E82;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    
+}
+
+.menu-list-down span {
+    display: flex;
+    margin-left: 5px;
+}
+
+.menu-list-down h5 {
+    display: flex;
+    margin-left: 5px;
+    color: white;
+}
+
+.circle {
+    background-color: #7B7E82;
+    border-radius: 20px;
+  }
 
 /*covers*/
 .covers {
@@ -310,6 +357,7 @@ footer {
 
     .nav-logo-mobile {
         display: block;
+        padding: 10px;
     }
 
     .nav-playlist {
