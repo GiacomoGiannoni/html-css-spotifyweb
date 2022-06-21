@@ -48,21 +48,6 @@ main {
     margin-bottom: 10px;
 }
 
-
-/*cta*/
-.cta {
-    position: fixed;
-    width: calc(100% - 250px);
-    height: 100px;
-    background-color: #080B12;
-    opacity: 0.7;
-    top: 0;
-    left: 250px;
-    text-align: right;
-    z-index: 10;
-}
-
-/*side-bar*/
 .main-content-nav {
     margin-top: 110px;
     text-align: center;
@@ -78,10 +63,97 @@ main {
     text-decoration: none;
 }
 
+/*cta*/
+.cta {
+    position: fixed;
+    width: calc(100% - 250px);
+    height: 100px;
+    background-color: #080B12;
+    opacity: 0.7;
+    top: 0;
+    left: 250px;
+    text-align: right;
+    z-index: 10;
+}
+
+/*side-bar*/
 #main-nav {
     width: 250px;
     flex-shrink: 0;
     background-color: black;
+    height: 100%;
+    min-height: 450px;
+    overflow: hidden;
+}
+
+.nav-top {
+    height: calc(100% - 80px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bottom {
+    height: 80px;
+    background-color: pink;
+}
+
+.nav-logo {
+    background-color: black;
+    color: white;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+.nav-logo img {
+    width: 70%;
+}
+
+.nav-logo-mobile {
+    display: none;
+    padding: 10px;
+}
+
+.nav-playlist {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.nav-playlist ul {
+    overflow-y: scroll;
+}
+
+.nav-main.menu {
+    background-color: brown;
+}
+
+.menu-list img {
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-list a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+}
+
+.menu-list span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu-list li.active {
+    border-left: solid 3px lightgreen;
+}
+
+.menu-list li {
+    border-left: solid 3px transparent;
 }
 
 /*covers*/
@@ -202,18 +274,15 @@ footer {
 }
 
 .up {
-    margin-top: 110px;
     text-align: center;
-}
-
-.up li {
     display: inline-block;
-    padding: 10px;
+    margin-top: 10px;
 }
 
-.up li a {
+.up a {
     color: #7B7E82;
     text-decoration: none;
+    padding: 10px;
 }
 
 /*Responsive*/
@@ -233,6 +302,26 @@ footer {
 @media all and (max-width: 678px)  {
     .main-nav {
         width: 50px;
+    }
+
+    .nav-logo {
+        display: none;
+    }
+
+    .nav-logo-mobile {
+        display: block;
+    }
+
+    .nav-playlist {
+    display: none;
+    }
+
+    .menu-list li span {
+        display: none;
+    }
+
+    .menu-list a {
+        margin-left: 10px;
     }
 
     .content {
